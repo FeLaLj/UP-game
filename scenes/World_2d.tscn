@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://d1edgcwlb0s7c"]
+[gd_scene load_steps=3 format=3 uid="uid://d1edgcwlb0s7c"]
+
+[ext_resource type="PackedScene" uid="uid://57gttbs473i3" path="res://scenes/player.tscn" id="1_nkfp8"]
+[ext_resource type="PackedScene" uid="uid://s352srisdvop" path="res://scenes/collision_shape_2d.tscn" id="2_xkqlw"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_nkfp8")]
+position = Vector2(-2, -24)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_xkqlw")]
+position = Vector2(-412, 73)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_xkqlw")]
+position = Vector2(435, -758)
+rotation = 1.5708
+
+[node name="StaticBody2D2" parent="StaticBody2D2" instance=ExtResource("2_xkqlw")]
+position = Vector2(829, 850)
+rotation = -3.14159
