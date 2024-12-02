@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1edgcwlb0s7c"]
+[gd_scene load_steps=4 format=3 uid="uid://d1edgcwlb0s7c"]
 
 [ext_resource type="PackedScene" uid="uid://57gttbs473i3" path="res://scenes/player.tscn" id="1_nkfp8"]
 [ext_resource type="PackedScene" uid="uid://s352srisdvop" path="res://scenes/collision_shape_2d.tscn" id="2_xkqlw"]
+[ext_resource type="Texture2D" uid="uid://cy038odvxwcwu" path="res://assets/sprites/DirtTile.png" id="3_tb4fg"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,9 +13,113 @@ position = Vector2(-2, -24)
 position = Vector2(-412, 73)
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_xkqlw")]
-position = Vector2(435, -758)
-rotation = 1.5708
+position = Vector2(-412, 62)
+rotation = -1.5708
 
-[node name="StaticBody2D2" parent="StaticBody2D2" instance=ExtResource("2_xkqlw")]
-position = Vector2(829, 850)
-rotation = -3.14159
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_xkqlw")]
+position = Vector2(432, 62)
+rotation = -1.5708
+
+[node name="DirtTile" type="Sprite2D" parent="."]
+position = Vector2(-388, 78)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
+
+[node name="DirtTile" type="Sprite2D" parent="DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile/DirtTile"]
+position = Vector2(32, 0)
+texture = ExtResource("3_tb4fg")
