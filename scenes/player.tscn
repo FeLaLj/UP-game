@@ -1,84 +1,132 @@
-[gd_scene load_steps=25 format=3 uid="uid://57gttbs473i3"]
+[gd_scene load_steps=37 format=3 uid="uid://57gttbs473i3"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_jjldt"]
-[ext_resource type="Texture2D" uid="uid://icjbva4417ou" path="res://assets/sprites/DinoDashPlayerAnimSheet.png" id="2_l3gdy"]
-[ext_resource type="Texture2D" uid="uid://dejik27w4m1lx" path="res://assets/sprites/DinoDashPlayerAnimSheet.png sliding.png" id="3_s524v"]
+[ext_resource type="Texture2D" uid="uid://choqugufhbj3m" path="res://assets/sprites/DinoDashPlayerAnimSheet.png" id="2_l3gdy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dyt0o"]
+load_path = "res://.godot/imported/DinoDashPlayerAnimSheet.png-885cd95d434af8e1489540ad67244616.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_irt3o"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(336, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1mpmr"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(360, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccfss"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(384, 0, 24, 24)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sifme"]
+load_path = "res://.godot/imported/DinoDashPlayerAnimSheet.pngrun.png-559f9a7a8166cbc11af9623480c97462.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhy8o"]
+atlas = SubResource("CompressedTexture2D_sifme")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6mhv"]
+atlas = SubResource("CompressedTexture2D_sifme")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjinf"]
+atlas = SubResource("CompressedTexture2D_sifme")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyqb3"]
+atlas = SubResource("CompressedTexture2D_sifme")
+region = Rect2(192, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khanf"]
+atlas = SubResource("CompressedTexture2D_sifme")
+region = Rect2(216, 0, 24, 24)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_0as5c"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hb1qa"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(24, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cjg3h"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(48, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yp6w2"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ltwwo"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(240, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_esr1d"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(264, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v7l28"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(288, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ue5vb"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(312, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h531v"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(96, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hx4jy"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(120, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a5011"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(144, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tjni6"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(168, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ltrbd"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(192, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_on40x"]
-atlas = ExtResource("2_l3gdy")
+atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(216, 0, 24, 24)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvgbx"]
+load_path = "res://.godot/imported/DinoDashPlayerAnimSheet.png sliding.png-c8876864863d7836e9e89b5c874ec5e3.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_mohx4"]
-atlas = ExtResource("3_s524v")
+atlas = SubResource("CompressedTexture2D_cvgbx")
 region = Rect2(288, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ksls"]
-atlas = ExtResource("3_s524v")
+atlas = SubResource("CompressedTexture2D_cvgbx")
 region = Rect2(312, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6nq6"]
+atlas = ExtResource("2_l3gdy")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2plsm"]
+atlas = ExtResource("2_l3gdy")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6ula"]
+atlas = ExtResource("2_l3gdy")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50fvl"]
+atlas = ExtResource("2_l3gdy")
+region = Rect2(192, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_517tq"]
+atlas = ExtResource("2_l3gdy")
+region = Rect2(216, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o1rgk"]
 animations = [{
@@ -95,6 +143,26 @@ animations = [{
 "loop": true,
 "name": &"Dying",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhy8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6mhv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjinf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyqb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khanf")
+}],
+"loop": true,
+"name": &"Goblin Run",
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -163,6 +231,26 @@ animations = [{
 "loop": true,
 "name": &"WallGliding",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6nq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2plsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6ula")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50fvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_517tq")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ejy22"]
@@ -174,16 +262,18 @@ script = ExtResource("1_jjldt")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D"]
-position = Vector2(0, -44)
+position = Vector2(-1, -39)
 scale = Vector2(4.89583, 4.89583)
 sprite_frames = SubResource("SpriteFrames_o1rgk")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.158921
+animation = &"new_animation"
+autoplay = "Goblin Run"
+frame_progress = 0.187531
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D/AnimatedSprite2D"]
+visible = false
 position = Vector2(0, -35)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -41.5)
 shape = SubResource("RectangleShape2D_ejy22")
