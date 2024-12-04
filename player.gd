@@ -1,11 +1,15 @@
 extends CharacterBody2D
 
+# Anim constants and variables
+@onready var _animated_sprite = $Sprite2D/AnimatedSprite2D
+var is_facing_right = true
+
 # Constants
 const speed = 550
-const jump_power = -2000
+const jump_power = -1800
 const acc = 50
 const friction = 70
-const gravity = 120
+const gravity = 110
 const wall_jump_pushback = 500
 const wall_slide_gravity = 300
 const max_fall_speed = 800
@@ -27,6 +31,9 @@ func _physics_process(_delta):
 	
 	# Move character
 	move_and_slide()
+
+	# Handle animation updates
+	update_animation()
 
 # Handles player input
 func input() -> Vector2:
@@ -52,13 +59,15 @@ func jump():
 	if Input.is_action_just_pressed("ui_up"):
 		if is_on_floor():
 			velocity.y = jump_power
-		elif is_touching_wall():
+		elif is_wall_sliding:
+			# Allow jumping off the wall
 			velocity.y = jump_power
-			velocity.x = -wall_jump_pushback if velocity.x > 0 else wall_jump_pushback
+			velocity.x = -wall_jump_pushback if is_facing_right else wall_jump_pushback
+			is_wall_sliding = false
 
 # Wall sliding logic
 func wall_slide():
-	if is_touching_wall() and !is_on_floor():
+	if is_touching_wall() and !is_on_floor() and velocity.y > 0:
 		is_wall_sliding = true
 		# Apply reduced gravity when sliding
 		velocity.y += wall_slide_gravity * 0.1
@@ -75,3 +84,23 @@ func is_touching_wall() -> bool:
 		if abs(collision.get_normal().x) > 0.9:
 			return true
 	return false
+
+# Updates animation based on state
+func update_animation():
+	if is_wall_sliding:
+		_animated_sprite.play("WallGliding")
+	elif velocity.x > 0:
+		if not is_facing_right:
+			flip_sprite(true)
+		_animated_sprite.play("Running")
+	elif velocity.x < 0:
+		if is_facing_right:
+			flip_sprite(false)
+		_animated_sprite.play("Running")
+	else:
+		_animated_sprite.play("Idle")
+
+# Flip the sprite using the flip_h property
+func flip_sprite(facing_right):
+	is_facing_right = facing_right
+	_animated_sprite.flip_h = not facing_right
