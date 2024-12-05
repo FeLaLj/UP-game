@@ -1,6 +1,8 @@
-[gd_scene load_steps=25 format=3 uid="uid://57gttbs473i3"]
+[gd_scene load_steps=26 format=3 uid="uid://57gttbs473i3"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_jjldt"]
+[ext_resource type="Texture2D" uid="uid://uyr8smgo1it8" path="res://assets/sprites/GoblinSheet.png" id="2_4m6w8"]
+[ext_resource type="Texture2D" uid="uid://oj83n6r21u5g" path="res://assets/sprites/GoboSheet.png" id="3_17tfe"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dyt0o"]
 load_path = "res://.godot/imported/DinoDashPlayerAnimSheet.png-885cd95d434af8e1489540ad67244616.ctex"
@@ -33,20 +35,20 @@ region = Rect2(48, 0, 24, 24)
 atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(72, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ltwwo"]
-atlas = SubResource("CompressedTexture2D_dyt0o")
+[sub_resource type="AtlasTexture" id="AtlasTexture_row3o"]
+atlas = ExtResource("2_4m6w8")
 region = Rect2(240, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_esr1d"]
-atlas = SubResource("CompressedTexture2D_dyt0o")
+[sub_resource type="AtlasTexture" id="AtlasTexture_naaw3"]
+atlas = ExtResource("2_4m6w8")
 region = Rect2(264, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_v7l28"]
-atlas = SubResource("CompressedTexture2D_dyt0o")
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7b6q"]
+atlas = ExtResource("2_4m6w8")
 region = Rect2(288, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ue5vb"]
-atlas = SubResource("CompressedTexture2D_dyt0o")
+[sub_resource type="AtlasTexture" id="AtlasTexture_3uhmu"]
+atlas = ExtResource("2_4m6w8")
 region = Rect2(312, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h531v"]
@@ -73,16 +75,13 @@ region = Rect2(192, 0, 24, 24)
 atlas = SubResource("CompressedTexture2D_dyt0o")
 region = Rect2(216, 0, 24, 24)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvgbx"]
-load_path = "res://.godot/imported/DinoDashPlayerAnimSheet.png sliding.png-c8876864863d7836e9e89b5c874ec5e3.ctex"
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8wn0"]
+atlas = ExtResource("3_17tfe")
+region = Rect2(360, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mohx4"]
-atlas = SubResource("CompressedTexture2D_cvgbx")
-region = Rect2(288, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ksls"]
-atlas = SubResource("CompressedTexture2D_cvgbx")
-region = Rect2(312, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_glodi"]
+atlas = ExtResource("3_17tfe")
+region = Rect2(336, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o1rgk"]
 animations = [{
@@ -115,20 +114,20 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 3.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ltwwo")
+"texture": SubResource("AtlasTexture_row3o")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_esr1d")
+"texture": SubResource("AtlasTexture_naaw3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_v7l28")
+"texture": SubResource("AtlasTexture_t7b6q")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ue5vb")
+"texture": SubResource("AtlasTexture_3uhmu")
 }],
 "loop": true,
 "name": &"Jumping",
@@ -155,18 +154,18 @@ animations = [{
 }],
 "loop": true,
 "name": &"Running",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mohx4")
+"texture": SubResource("AtlasTexture_h8wn0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1ksls")
+"texture": SubResource("AtlasTexture_glodi")
 }],
 "loop": true,
 "name": &"WallGliding",
-"speed": 5.0
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ejy22"]
@@ -181,9 +180,9 @@ script = ExtResource("1_jjldt")
 position = Vector2(2, -28)
 scale = Vector2(3.39258, 3.39258)
 sprite_frames = SubResource("SpriteFrames_o1rgk")
-animation = &"Idle"
+animation = &"Dying"
 autoplay = "Idle"
-frame_progress = 0.903244
+frame_progress = 0.467735
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D/AnimatedSprite2D"]
 
